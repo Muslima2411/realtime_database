@@ -19,37 +19,6 @@ class _HomePageState extends State<HomePage> {
 
   Color txtColor = const Color(0xFF646464);
 
-  // Widget _buildCard(
-  //     {required Color color, required Map<String, dynamic> data}) {
-  //   return Container(
-  //       padding: EdgeInsets.all(18),
-  //       decoration: BoxDecoration(
-  //         borderRadius: BorderRadius.circular(16),
-  //         color: color,
-  //       ),
-  //       child: Column(
-  //         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-  //         children: [
-  //           Center(
-  //             child: Text(
-  //               data["title"],
-  //               style: TextStyle(
-  //                   fontWeight: FontWeight.bold, fontSize: 18, color: txtColor),
-  //             ),
-  //           ),
-  //           Center(
-  //             child: Text(
-  //               data["content"],
-  //               textAlign: TextAlign.center,
-  //               style: TextStyle(
-  //                 color: txtColor,
-  //               ),
-  //             ),
-  //           ),
-  //         ],
-  //       ));
-  // }
-
   void read() async {
     await RTDBService.readData();
     print("all data was loaded");
